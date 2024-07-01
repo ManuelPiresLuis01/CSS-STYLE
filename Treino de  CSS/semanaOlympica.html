@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        cores das argolas
+        border: 5px solid blue;
+        border: 5px solid black;
+        border: 5px solid red;
+        border: 5px solid yellow;
+        border: 5px solid green;
+         */
+        body {
+            margin: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #80e7ebc7;
+        }
+
+        .yellow {
+            position: absolute;
+            top: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 15px solid yellow;
+            border-left: 15px solid transparent;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        .dot {
+            width: 20px;
+            position: absolute;
+            top: 125px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 20px;
+            background-color: yellow;
+            border-radius: 50%;
+        }
+
+        .haha{
+            position: absolute;
+            top: 125px;
+            left: 50%;
+            transform: translateX(-50%);
+            transform: rotate(-35deg);
+        }
+
+        .cabo
+        {
+            width: 14px;
+            height: 30px;
+            border:1px solid #d1d148ab;
+            background-color: yellow;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .catana {
+            width: 15px;
+            height: 100px;
+            background-color: yellow;
+            border-bottom-right-radius: 30px;
+        }
+
+        .red,
+        .black {
+            width: 400px;
+            height: 150px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+        .up div,
+        .down div {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .simbolo {
+            margin-top: 20px;
+        }
+
+        .up,
+        .down {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .up {
+            position: absolute;
+            top: 320px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .down {
+            position: absolute;
+            top: 370px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h1 {
+            position: absolute;
+            top: 500px;
+            left: 50%;
+            text-align: center;
+            transform: translateX(-50%);
+        }
+
+        .a1 {
+            border: 5px solid blue;
+        }
+
+        .a2 {
+            border: 5px solid black;
+        }
+
+        .a3 {
+            border: 5px solid red;
+        }
+
+        .a4 {
+            border: 5px solid yellow;
+        }
+
+        .a5 {
+            border: 5px solid green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="bandeira">
+            <div class="red"></div>
+            <div class="dot"></div>
+            <div class="haha">
+                <div class="cabo"></div>
+                <div class="catana"></div>
+            </div>
+            <div class="yellow"></div>
+            <div class="black"></div>
+        </div>
+        <div class="simbolo">
+            <div class="up">
+                <div class="a1"></div>
+                <div class="a2"></div>
+                <div class="a3"></div>
+            </div>
+            <div class="down">
+                <div class="a4"></div>
+                <div class="a5"></div>
+            </div>
+        </div>
+
+    </div>
+    <h1>GOIN' TO OLYMPIC GAMES<br>CONGRATULATIONS TO ALL SPORT LOVERS</h1>
+</body>
+
+</html>

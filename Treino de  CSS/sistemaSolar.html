@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #terra {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 100;
+        font-size: 50px;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        background-color: #4141ffb0;
+        animation: giro 10s linear infinite;
+
+    }
+
+    #lua {
+        width: 190px;
+        height: 190px;
+        background-color: gray;
+        color: white;
+        font-weight: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin: 0 10px;
+        animation: lua 1s linear infinite alternate-reverse;
+    }
+
+    @keyframes lua {
+        0% {
+            background-color: #808080;
+        }
+
+        100% {
+            background-color: #80808049;
+        }
+    }
+
+    @keyframes giro {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    .giro {
+        position: absolute;
+        display: flex;
+        justify-content: right;
+        width: 620px;
+        height: 620px;
+        border-radius: 50%;
+        animation: giro 10s linear infinite;
+
+    }
+
+    .sol {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: orangered;
+        width: 300px;
+        height: 100vh;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 100;
+        font-size: 50px;
+    }
+
+    .dot {
+        width: 9px;
+        height: 9px;
+        position: fixed;
+        top: 100px;
+        left: 400px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.801);
+        animation: estrela 20s linear infinite alternate;
+    }
+
+    .dot1 {
+        width: 9px;
+        height: 9px;
+        position: fixed;
+        top: 15%;
+        left: 10%;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.801);
+        animation: pisca 2s linear infinite alternate-reverse;
+
+    }
+
+    .dot2 {
+        width: 9px;
+        height: 9px;
+        position: fixed;
+        top: 50%;
+        left: 25%;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.801);
+        animation: pisca 2s linear infinite alternate-reverse;
+
+    }
+
+    .dot3 {
+        width: 9px;
+        height: 9px;
+        position: fixed;
+        top: 30%;
+        left: 40%;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.801);
+        animation: pisca 2s linear infinite alternate-reverse;
+    }
+
+    .dot4 {
+        width: 9px;
+        height: 9px;
+        top: 45%;
+        left: 60%;
+        position: fixed;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.801);
+        animation: estrela 60s linear infinite alternate;
+
+    }
+
+    .dot5 {
+        width: 9px;
+        height: 9px;
+        top: 80%;
+        left: 50%;
+        position: fixed;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.801);
+        animation: pisca 2s linear infinite alternate-reverse;
+
+    }
+
+    .dot6 {
+        width: 9px;
+        height: 9px;
+        top: 60%;
+        left: 30%;
+        position: fixed;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.801);
+        animation: pisca 2s linear infinite alternate-reverse;
+    }
+
+    .dot7 {
+        width: 9px;
+        height: 9px;
+        top: 70%;
+        left: 70%;
+        position: fixed;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.801);
+        animation: pisca 2s linear infinite alternate-reverse;
+    }
+
+    .dot8 {
+        width: 9px;
+        height: 9px;
+        top: 10%;
+        left: 85%;
+        position: fixed;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.801);
+        animation: pisca 2s linear infinite alternate-reverse;
+    }
+
+    .dot9 {
+        width: 9px;
+        height: 9px;
+        top: 90%;
+        left: 77%;
+        position: fixed;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.801);
+        animation: pisca 2s linear infinite alternate-reverse;
+    }
+
+    .dot10 {
+        width: 9px;
+        height: 9px;
+        top: 78%;
+        left: 95%;
+        position: fixed;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.801);
+        animation: pisca 2s linear infinite alternate-reverse;
+
+    }
+
+
+    @keyframes estrela {
+        100% {
+            left: 90%;
+        }
+
+    }
+
+    @keyframes pisca {
+        0% {
+            background-color: #ffffff;
+        }
+
+        100% {
+            background-color: #ffffff7a;
+        }
+
+    }
+</style>
+
+<body>
+    
+    <div class="estrelas">
+        <div class="dot"></div>
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot3"></div>
+        <div class="dot4"></div>
+        <div class="dot5"></div>
+        <div class="dot6"></div>
+        <div class="dot7"></div>
+        <div class="dot8"></div>
+        <div class="dot9"></div>
+        <div class="dot10"></div>
+    </div>
+    <div class="sol">SOL</div>
+
+    <div class="container">
+        <div class="giro">
+            <div id="lua">LUA</div>
+        </div>
+        <div id="terra">TERRA</div>
+    </div>
+
+</body>
+</html>
